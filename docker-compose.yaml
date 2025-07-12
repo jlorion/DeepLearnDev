@@ -1,0 +1,9 @@
+services:
+  notebook:
+    container_name: pytorch-notebook
+    image: quay.io/jupyter/pytorch-notebook:latest
+    ports:
+      - "4040:4040"
+      - "8888:8888"
+    volumes:
+      - .:/home/jovyan
